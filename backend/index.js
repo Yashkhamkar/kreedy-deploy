@@ -11,6 +11,14 @@ app.use(express.json());
 mongoose.set("strictQuery", false);
 const port = process.env.PORT;
 const path = require("path");
+const jwt = require("jsonwebtoken");
+
+// const token =
+//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmM1YzA2M2UwYjM4ZTdlODRjMmFkOSIsImlhdCI6MTY3NzQ4MzAxNCwiZXhwIjoxNjc3NDgzMDc0fQ.g6YnW7Bbfocg1gajFVqz99HmeTMDSDQwbJDqXc5F-z8";
+
+// const decodedToken = jwt.decode(token, { complete: true });
+
+// console.log(decodedToken.payload.exp);
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
 });
